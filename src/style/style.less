@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+ * {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+   vertical-align: baseline;
+   background-color: transparent;
+   text-decoration: none;
+ }
+
+.bids {
+  background-color: #D8E3D9;
+}
+.asks {
+  background-color: #F1CECE;
+}
+
+@media (max-width: 660px) {
+  .table {
+    width: 445px;
+    th:nth-child(3n) {
+      display: none;
+    }
+    td:nth-child(3n) {
+      display: none;
+    }
+  }
+}
+
