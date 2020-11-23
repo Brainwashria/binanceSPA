@@ -1,14 +1,14 @@
 <template>
- <div id="app">
-  <Header v-on:toggle-sidebar="listenToggleSidebar"/>
-  <SidebarMenu :class="{active : isSidebarActive}"/>
+ <div id='app'>
+  <Header v-on:toggle-sidebar='listenToggleSidebar'/>
+  <SidebarMenu :class='{active : isSidebarActive}'/>
   <router-view/>
  </div>
 </template>
 
 <script>
-import Header from "./components/Header";
-import SidebarMenu from "./components/SidebarMenu";
+import Header from './components/Header';
+import SidebarMenu from './components/SidebarMenu';
 
 export default {
   name: 'App',
@@ -19,7 +19,7 @@ export default {
  created() {
   this.$binance.connect(`ethbtc`);
   this.$store.dispatch('changeSymbolAction', `ETHBTC`)
-  this.$binance.synchronize(`ethbtc`);
+  this.$binance.synchronize('ethbtc');
   this.$events.on('load', (data) => {
    this.$store.dispatch('loadSynchronizedAction', data)
   })
@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang='less'>
  @import 'style/style.less';
 #app {
 

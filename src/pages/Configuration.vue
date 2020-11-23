@@ -1,6 +1,6 @@
 <template>
   <div>
-    <select @change="changeSymbol" v-model="symbol" class="selectConfiguration">
+    <select @change='changeSymbol' v-model='symbol' class='selectConfiguration'>
       <option>BTCUSDT</option>
       <option>BNBBTC</option>
       <option selected>ETHBTC</option>
@@ -32,7 +32,7 @@
         this.$binance.synchronize(this.symbol);
       }
     },
-    name: "Configuration",
+    name: 'Configuration',
     components: {}
   }
 </script>
