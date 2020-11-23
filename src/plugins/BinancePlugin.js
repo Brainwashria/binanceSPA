@@ -1,4 +1,4 @@
-import binanceParser from "../parser/binanceParser";
+import binanceParser from '../parser/binanceParser';
 const axios = require('axios');
 
 

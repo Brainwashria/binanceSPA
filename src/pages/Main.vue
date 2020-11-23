@@ -1,22 +1,17 @@
 <template>
   <div>
-    <div class="container">
-      <Table v-bind:is-it-bids='true'/>
-      <Table :is-it-asks="true"/>
+    <div class='container'>
+      <Table :is-it-bids='true'/>
+      <Table :is-it-asks='true'/>
     </div>
   </div>
 </template>
 
 <script>
-  import Table from "../components/Table";
+  import Table from '../components/Table';
 
   export default {
-    name: "Main",
-
-    data: function() {
-      return {
-      }
-    },
+    name: 'Main',
     components: {Table}
   }
 </script>
